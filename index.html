@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A front-end practice recreation inspired by OPay's digital payments website." />
+  <title>OPay — Payments Made Easy</title>
+  <link rel="icon" href="assets/opay-mark.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="OPay home"><span class="brand-mark">O</span><span>Pay</span></a>
+      <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+      <div class="nav-links">
+        <a href="#personal">Personal</a>
+        <a href="#business">Business</a>
+        <a href="#security">Security</a>
+        <a href="#about">About Us</a>
+      </div>
+      <a class="nav-cta" href="#download">Download App <span>↗</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="eyebrow-dot"></span> Your everyday money app</div>
+          <h1>Make life<br /><span>easier with OPay.</span></h1>
+          <p>Send money, pay bills, buy airtime and manage your everyday payments — all from one simple app.</p>
+          <div class="hero-actions" id="download">
+            <a class="button button-primary" href="https://www.opayweb.com/" target="_blank" rel="noreferrer">Get the OPay app <span>↗</span></a>
+            <a class="button button-light" href="#services">Explore services</a>
+          </div>
+          <div class="trust-row"><span class="check-icon">✓</span><span>Fast payments</span><i></i><span>Easy to use</span><i></i><span>Security-focused</span></div>
+        </div>
+        <div class="hero-art" aria-label="Illustration of a mobile payment app">
+          <div class="orb orb-one"></div><div class="orb orb-two"></div>
+          <div class="float-card float-card-top"><span class="mini-icon">↗</span><div><b>Money sent</b><small>Payment successful</small></div><strong>✓</strong></div>
+          <div class="phone">
+            <div class="phone-speaker"></div>
+            <div class="phone-screen">
+              <div class="phone-top"><span class="mini-brand"><b>O</b>Pay</span><span class="avatar">U</span></div>
+              <div class="balance-card"><small>Total balance</small><h3>₦ 248,500<span>.00</span></h3><div class="balance-foot"><span>•••• 6821</span><span>◉</span></div></div>
+              <div class="quick-actions"><div><span class="qa-icon">↗</span><small>Transfer</small></div><div><span class="qa-icon">▣</span><small>Airtime</small></div><div><span class="qa-icon">▤</span><small>Data</small></div><div><span class="qa-icon">ϟ</span><small>Bills</small></div></div>
+              <div class="phone-section-title"><b>Recent activity</b><small>See all</small></div>
+              <div class="activity"><span class="activity-icon purple">↗</span><div><b>Transfer to Tunde</b><small>Today, 10:42 AM</small></div><strong>−₦5,000</strong></div>
+              <div class="activity"><span class="activity-icon yellow">ϟ</span><div><b>Airtime purchase</b><small>Today, 9:18 AM</small></div><strong>−₦1,000</strong></div>
+              <div class="phone-nav"><span>⌂<small>Home</small></span><span>▦<small>Rewards</small></span><span>▤<small>Finance</small></span><span>◉<small>Profile</small></span></div>
+            </div>
+          </div>
+          <div class="float-card float-card-bottom"><span class="success-badge">✓</span><div><b>Payment complete</b><small>Your bill has been paid</small></div></div>
+          <div class="decor decor-cross">✳</div><div class="decor decor-star">✦</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats container" aria-label="Service highlights">
+      <div><strong>One app</strong><span>For everyday payments</span></div><div><strong>Anytime</strong><span>Manage money on the go</span></div><div><strong>Simple</strong><span>Easy payment experience</span></div><div><strong>Secure</strong><span>Designed with safety in mind</span></div>
+    </section>
+
+    <section class="section services" id="services">
+      <div class="container">
+        <div class="section-heading"><span class="section-label">WHAT YOU CAN DO</span><h2>Everything you need.<br /><span>All in one place.</span></h2><p>Take care of daily payments without the hassle.</p></div>
+        <div class="service-grid">
+          <article class="service-card"><span class="service-icon green">↗</span><h3>Send & receive money</h3><p>Transfer money and keep up with the people who matter.</p><a href="https://www.opayweb.com/" target="_blank" rel="noreferrer">Learn more <span>→</span></a></article>
+          <article class="service-card"><span class="service-icon orange">▣</span><h3>Airtime & data</h3><p>Top up your phone and stay connected whenever you need to.</p><a href="https://www.opayweb.com/" target="_blank" rel="noreferrer">Learn more <span>→</span></a></article>
+          <article class="service-card"><span class="service-icon blue">ϟ</span><h3>Pay your bills</h3><p>Make everyday bill payments from the convenience of your phone.</p><a href="https://www.opayweb.com/" target="_blank" rel="noreferrer">Learn more <span>→</span></a></article>
+          <article class="service-card"><span class="service-icon purple">▤</span><h3>Track your spending</h3><p>Check your activity and keep your payments organised.</p><a href="https://www.opayweb.com/" target="_blank" rel="noreferrer">Learn more <span>→</span></a></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section personal-section" id="personal">
+      <div class="container split-layout">
+        <div class="feature-visual"><div class="feature-circle"></div><div class="transfer-panel"><div class="panel-head"><span>Transfer</span><span class="panel-dots">•••</span></div><div class="recipient"><span class="recipient-avatar">AT</span><div><b>Alex Thompson</b><small>OPay account</small></div><span class="green-check">✓</span></div><div class="amount-label">Amount</div><div class="amount">₦ 25,000<span>.00</span></div><div class="note-line">Transfer description <span>Personal</span></div><div class="confirm-button">Confirm transfer</div><div class="panel-secure">▣ &nbsp; Secure transaction</div></div><div class="mini-notice"><span>✓</span><div><b>You're all set!</b><small>Payment made easy</small></div></div></div>
+        <div class="feature-copy"><span class="section-label">FOR YOUR EVERYDAY LIFE</span><h2>Your money,<br /><span>your way.</span></h2><p>From quick transfers to everyday top-ups, enjoy a convenient way to handle your money wherever your day takes you.</p><ul class="feature-list"><li><span>✓</span> Convenient digital payments</li><li><span>✓</span> Clear transaction activity</li><li><span>✓</span> Useful services in one place</li></ul><a class="button button-primary" href="https://www.opayweb.com/" target="_blank" rel="noreferrer">Discover OPay <span>↗</span></a></div>
+      </div>
+    </section>
+
+    <section class="section business-section" id="business">
+      <div class="container business-card"><div class="business-copy"><span class="section-label">FOR BUSINESSES</span><h2>Help your business<br />move <span>forward.</span></h2><p>Explore payment solutions designed to support merchants and make collecting payments more convenient.</p><a class="button button-white" href="https://www.opayweb.com/" target="_blank" rel="noreferrer">Explore business services <span>↗</span></a></div><div class="business-art"><div class="shop-card"><div class="shop-top"><span class="shop-logo">O</span><span class="shop-status">● Active</span></div><small>Today's transactions</small><h3>₦ 186,250</h3><div class="chart-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="shop-bottom"><span>Transaction summary</span><b>View details →</b></div></div><span class="business-spark">✦</span></div></div>
+    </section>
+
+    <section class="section security-section" id="security"><div class="container security-grid"><div><span class="section-label">YOUR SAFETY MATTERS</span><h2>Peace of mind<br />with every <span>payment.</span></h2><p>Stay alert, protect your personal details and only use official OPay channels for support and account activity.</p><a class="text-link" href="https://www.opayweb.com/" target="_blank" rel="noreferrer">Visit the official OPay website <span>↗</span></a></div><div class="security-points"><article><span class="shield-icon">♢</span><div><h3>Protect your details</h3><p>Never share your PIN, password or one-time verification code with anyone.</p></div></article><article><span class="shield-icon">✓</span><div><h3>Check before you pay</h3><p>Confirm recipient details and payment amounts before completing a transaction.</p></div></article><article><span class="shield-icon">♡</span><div><h3>Use official support</h3><p>Reach out through verified channels if something about an account activity looks unusual.</p></div></article></div></div></section>
+
+    <section class="download-section"><div class="container download-banner"><div><span class="section-label">READY WHEN YOU ARE</span><h2>Make everyday payments<br />a little <span>easier.</span></h2><p>Explore the OPay app and its services through official channels.</p></div><a class="button button-white" href="https://www.opayweb.com/" target="_blank" rel="noreferrer">Visit OPay <span>↗</span></a><div class="banner-watermark">O</div></div></section>
+  </main>
+
+  <footer class="footer" id="about"><div class="container footer-main"><div class="footer-brand"><a class="brand" href="#home"><span class="brand-mark">O</span><span>Pay</span></a><p>Everyday payments, made simpler.</p></div><div class="footer-column"><h4>Explore</h4><a href="#personal">Personal</a><a href="#business">Business</a><a href="#services">Services</a></div><div class="footer-column"><h4>Company</h4><a href="#about">About us</a><a href="#security">Security</a><a href="https://www.opayweb.com/" target="_blank" rel="noreferrer">Official website ↗</a></div><div class="footer-column"><h4>Important</h4><p>This is an independent practice project, not the official OPay website.</p></div></div><div class="container footer-bottom"><span>© 2026 OPay website practice project</span><span>Unofficial educational recreation</span></div></footer>
+  <script src="script.js"></script>
+</body>
+</html>
